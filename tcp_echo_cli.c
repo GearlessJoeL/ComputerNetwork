@@ -9,7 +9,6 @@
 
 #define MAX_CMD_STR 100
 
-// 业务逻辑处理函数
 void echo_rqt(int sockfd) {
     char buf[MAX_CMD_STR + 1];
     while (fgets(buf, MAX_CMD_STR, stdin)) {
@@ -33,7 +32,6 @@ void echo_rqt(int sockfd) {
         }
         printf("[echo_rep] %s\n", buf);  
     }
-    //return 0;
 }
 
 int main(int argc, char *argv[]){
